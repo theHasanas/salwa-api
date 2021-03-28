@@ -9,6 +9,12 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    secret: {
+      type: DataTypes.STRING,
+    },
+    admin: {
+      type: DataTypes.BOOLEAN,
+    },
   });
   return User;
 };
